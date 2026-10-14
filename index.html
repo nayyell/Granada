@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Novelita – Novel Remaja Penuh Warna</title>
+  <meta name="description" content="Koleksi novel remaja: romance, action, fiksi, dan adventure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <span class="blob b1"></span><span class="blob b2"></span>
+    <nav class="brand">📖 Novelita</nav>
+    <h1>Baca dulu <span class="pink">sekilasnya</span>,<br>jatuh cinta <span class="blue">kemudian</span>.</h1>
+    <p class="lead">Novel remaja pilihan untuk semua suasana hati. Klik sampul buku untuk mengintip cerita dan ilustrasinya.</p>
+    <div class="search">
+      <label for="q" class="sr">Cari judul atau penulis</label>
+      <input id="q" type="search" placeholder="Cari judul atau penulis…" autocomplete="off">
+    </div>
+  </header>
+
+  <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 40c120 40 240 40 360 10s240-50 360-30 240 50 360 40 240-40 360-20v40H0z"/>
+  </svg>
+
+  <main>
+    <div class="filters" role="group" aria-label="Pilih genre">
+      <button class="chip active" data-genre="all">🌈 Semua</button>
+      <button class="chip" data-genre="romance">💖 Romance</button>
+      <button class="chip" data-genre="action">⚡ Action</button>
+      <button class="chip" data-genre="fiksi">🔮 Fiksi</button>
+      <button class="chip" data-genre="adventure">🧭 Adventure</button>
+    </div>
+    <p id="count" class="count" aria-live="polite"></p>
+    <section id="grid" class="grid"></section>
+  </main>
+
+  <dialog id="modal" aria-labelledby="m-title">
+    <button class="close" id="close" aria-label="Tutup">✕</button>
+    <div id="m-body"></div>
+  </dialog>
+
+  <footer>Dibuat dengan 💗 dan 💙 untuk pembaca remaja · Novelita © 2026</footer>
+  <script src="script.js"></script>
+</body>
+</html>
